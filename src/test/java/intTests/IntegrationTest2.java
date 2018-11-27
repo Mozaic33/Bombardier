@@ -18,7 +18,7 @@ public class IntegrationTest2 {
         File src = new File("/usr/local/bin/phantomjs");
         System.setProperty("phantomjs.binary.path", src.getAbsolutePath());
         WebDriver driver = new PhantomJSDriver();
-        driver.get("http://192.168.39.32:8080/AMGrads");
+        driver.get("http://192.168.11.97:8080/AMGrads");
         String title1 = driver.getTitle();
         Assert.assertTrue(title1.contains("MyApp"));
 
